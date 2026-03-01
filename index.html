@@ -282,37 +282,41 @@ img {
 
 /* ================== الجوال ================== */
 @media (max-width: 768px) {
-    body {
-        /* زدنا القيمة هنا لتعطي مساحة كافية بعد تحول القائمة لشكل عمودي */
-        padding-top: 220px; 
-    }
-
-    /* الناف بار */
+    /* بدلاً من دفع الصفحة كلها، نتحكم في مرونة العناصر */
     .nav {
-        position: absolute; /* أو fixed إذا كنت تريده ثابتاً */
-        top: 0;
-        width: 100%;
+        display: flex;
         flex-direction: column;
-        padding: 20px 0;
-        text-align: center;
-        z-index: 1000; /* لضمان بقائه فوق العناصر الأخرى */
+        align-items: center;
+        padding: 10px 0;
+        /* نلغي الـ position عشان ما يطير فوق العناصر */
+        position: relative; 
     }
 
     .nav ul {
+        display: flex;
         flex-direction: column;
-        gap: 15px; /* مسافة بسيطة بين الروابط */
+        gap: 5px; /* صغرنا المسافة عشان ما ينزل بزيادة */
         padding: 0;
-        margin: 0;
+        margin: 0 0 15px 0; /* مسافة بسيطة تحت القائمة قبل الاسم */
     }
 
-    /* باقي الكود كما هو... */
-    #about-me {
+    /* هذا الجزء عشان نضمن أن الاسم (Azzam) يظهر تحته بوضوح */
+    header, .hero-section {
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    /* باقي تنسيقاتك الأصلية */
+    #about-me, .Education-box, .project {
         flex-direction: column;
         align-items: center;
     }
-    /* ... */
-}
 
+    .box, .information, .box-too, .skills, .project1 {
+        width: 90% !important;
+        margin: 10px auto;
+    }
+}
 
 
 
@@ -493,6 +497,7 @@ img {
 
     </body>
 </html>   
+
 
 
 
