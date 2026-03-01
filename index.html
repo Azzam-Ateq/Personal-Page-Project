@@ -3,6 +3,8 @@
     <head> 
         <title>Azzam Alghamdi</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
         <!-- start css -->
         <style>
             body {
@@ -62,7 +64,7 @@
              justify-content: space-between;
             align-items: center;
 
-               position: fixed;     /* يخليها ثابتة */
+               position: fixed;     
                  top: 0;
                 left: 0;
                 width: 100%;
@@ -172,7 +174,7 @@
                     width: 250px;
                     border-radius: 15px;
                     color: white;
-                    margin-right :90px; /* مكان المربع يميمن يسار فوق تحت */
+                    margin-right :90px;    /*   صفحة الدراسة  */
                      margin-left: 50px;
                      margin-top: 90px;
                      font-family: 'Times New Roman', Times, serif;
@@ -180,7 +182,7 @@
                 .edu-img {
                 width: 100%;
                 height: 180px;
-                object-fit: cover;   /* تخلي الصورة مرتبة */
+                object-fit: cover;  
                 border-radius: 10px;
                 margin-bottom: 10px;
                 }
@@ -198,7 +200,7 @@
                     }
 
                     .progress{
-                        background:#ccc;
+                        background:#ccc;        /*  صفحة المهارات */ 
                         height:13px;
                         border-radius:20px;
                     }
@@ -228,14 +230,14 @@
                     width: 550px;
                     border-radius: 15px;
                     color: white;
-                    margin-right :90px; /* مكان المربع يميمن يسار فوق تحت */
+                    margin-right :90px; 
                      margin-left: 50px;
                      margin-top: 90px;
-                     font-family: 'Times New Roman', Times, serif; }
+                     font-family: 'Times New Roman', Times, serif; }    /* صفحة مشاريعي */
   .project-imeg {
                 width: 100%;
                 height: 180px;
-                object-fit: cover;   /* تخلي الصورة مرتبة */
+                object-fit: cover;  
                 border-radius: 10px;
                 margin-bottom: 10px;
                 }
@@ -247,7 +249,7 @@
             background-color: #193554be;
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 20px;              
             margin-top: 50px;
         }
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -280,33 +282,35 @@ img {
     height: auto;
 }
 
-/* ================== الجوال ================== */
+/* عدم التغيير في الجوال وتم الاستعانه فيه بالذكاء الاصطناعي لعدم التوافق بسهولة  */
+
+
 @media (max-width: 768px) {
-    /* بدلاً من دفع الصفحة كلها، نتحكم في مرونة العناصر */
+
     .nav {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 10px 0;
-        /* نلغي الـ position عشان ما يطير فوق العناصر */
+      
         position: relative; 
     }
 
     .nav ul {
         display: flex;
         flex-direction: column;
-        gap: 5px; /* صغرنا المسافة عشان ما ينزل بزيادة */
+        gap: 5px; 
         padding: 0;
-        margin: 0 0 15px 0; /* مسافة بسيطة تحت القائمة قبل الاسم */
+        margin: 0 0 15px 0; 
     }
 
-    /* هذا الجزء عشان نضمن أن الاسم (Azzam) يظهر تحته بوضوح */
+    
     header, .hero-section {
         padding-top: 20px;
         text-align: center;
     }
 
-    /* باقي تنسيقاتك الأصلية */
+ 
     #about-me, .Education-box, .project {
         flex-direction: column;
         align-items: center;
@@ -470,7 +474,7 @@ img {
         <!-- القسم الرابع مشاريعي-->
          <hr> 
        <section id="project">
-    <h1 class="project-title">Project</h1>
+    <h1 class="project-title"> My Project</h1>
     <div class="project">
              <div class="project1">
              <img src="لقطة شاشة 2026-02-27 165220.png" class="project-imeg">
@@ -496,7 +500,8 @@ img {
         </footer>
 
     </body>
-</html>   
+</html>     
+
 
 
 
