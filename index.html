@@ -282,63 +282,35 @@ img {
 
 /* ================== الجوال ================== */
 @media (max-width: 768px) {
-
     body {
-        padding-top: 100px;
+        /* زدنا القيمة هنا لتعطي مساحة كافية بعد تحول القائمة لشكل عمودي */
+        padding-top: 220px; 
     }
 
     /* الناف بار */
     .nav {
+        position: absolute; /* أو fixed إذا كنت تريده ثابتاً */
+        top: 0;
+        width: 100%;
         flex-direction: column;
-        padding: 15px;
+        padding: 20px 0;
         text-align: center;
+        z-index: 1000; /* لضمان بقائه فوق العناصر الأخرى */
     }
 
     .nav ul {
         flex-direction: column;
-        gap: 10px;
+        gap: 15px; /* مسافة بسيطة بين الروابط */
         padding: 0;
+        margin: 0;
     }
 
-    /* about me */
+    /* باقي الكود كما هو... */
     #about-me {
         flex-direction: column;
         align-items: center;
     }
-
-    .box,
-    .information {
-        width: 90%;
-        margin: 15px 0;
-    }
-
-    /* التعليم */
-    .Education-box {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .box-too {
-        width: 90%;
-        margin: 20px 0;
-    }
-
-    /* المهارات */
-    .skills {
-        width: 90%;
-    }
-
-    /* المشاريع */
-    .project {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .project1 {
-        width: 90%;
-        margin: 20px 0;
-    }
-
+    /* ... */
 }
 
 
@@ -521,6 +493,7 @@ img {
 
     </body>
 </html>   
+
 
 
 
