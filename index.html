@@ -274,26 +274,41 @@
         }
 
 @media (max-width: 768px) {
+    /* شريط التنقل */
     .nav {
+        display: flex;         /* تأكد انه فلكس */
         flex-direction: column;
         align-items: center;
     }
 
     .nav ul {
+        display: flex;         /* ضروري للفلكس */
         flex-direction: column;
         align-items: center;
+        padding: 0;
+        margin: 10px 0;
+        list-style: none;
     }
 
+    .nav li {
+        margin: 10px 0;        /* يوزع العناصر بشكل أفضل */
+    }
+
+    /* Education box */
     .Education-box {
+        display: flex;          /* تأكد انه فلكس */
         flex-direction: column;
         align-items: center;
+        gap: 15px;             /* يعطي مسافة بين العناصر */
     }
 
+    /* المربعات الصغيرة */
     .box-too {
         width: 90%;
         margin: 10px 0;
     }
 }
+
 
 
 
@@ -476,6 +491,7 @@
 
     </body>
 </html>   
+
 
 
 
