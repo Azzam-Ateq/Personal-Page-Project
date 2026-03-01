@@ -276,39 +276,81 @@
 @media (max-width: 768px) {
     /* شريط التنقل */
     .nav {
-        display: flex;         /* تأكد انه فلكس */
+        display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     .nav ul {
-        display: flex;         /* ضروري للفلكس */
+        display: flex;
         flex-direction: column;
         align-items: center;
         padding: 0;
         margin: 10px 0;
         list-style: none;
+        width: 100%;
     }
 
     .nav li {
-        margin: 10px 0;        /* يوزع العناصر بشكل أفضل */
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav a {
+        display: block;
+        padding: 10px;
     }
 
     /* Education box */
     .Education-box {
-        display: flex;          /* تأكد انه فلكس */
+        display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 15px;             /* يعطي مسافة بين العناصر */
+        gap: 15px;
+        width: 100%;
+        padding: 15px;
     }
 
     /* المربعات الصغيرة */
     .box-too {
         width: 90%;
-        margin: 10px 0;
+        margin: 10px auto;  /* auto للوسط */
+        padding: 15px;
+    }
+    
+    /* إضافات مهمة للعناصر الظاهرة في الصورة */
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .profile-info {
+        text-align: center;
+    }
+    
+    h1, h2, h3 {
+        text-align: center;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .skills, .project, .information {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .location, .workplace, .age, .languages {
+        text-align: center;
+        margin: 8px 0;
     }
 }
-
 
 
 
@@ -491,6 +533,7 @@
 
     </body>
 </html>   
+
 
 
 
