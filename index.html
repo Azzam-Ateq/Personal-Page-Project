@@ -274,43 +274,26 @@
         }
 
 @media (max-width: 768px) {
-    /* كل العناصر تصير بعرض كامل */
-    body * {
-        max-width: 100% !important;
-        box-sizing: border-box !important;
-    }
-    
-    /* القوائم تصير عمودية */
-    ul, ol, .nav, .menu, header {
-        display: flex !important;
+    /* كل العناصر الرئيسية */
+    .nav, #about-me, .Education-box, .project, .skills {
         flex-direction: column !important;
         align-items: center !important;
-        text-align: center !important;
-        padding: 0 !important;
     }
     
-    li, .nav li {
-        list-style: none !important;
-        margin: 8px 0 !important;
-        width: 100% !important;
+    /* كل الصناديق */
+    .box, .information, .box-too, .project1 {
+        width: 95% !important;
+        margin: 10px auto !important;
+    }
+    
+    /* القوائم */
+    .nav ul {
+        flex-direction: column !important;
+        text-align: center !important;
     }
     
     /* العناوين */
-    h1, h2, h3, h4, h5, h6 {
-        text-align: center !important;
-        width: 100% !important;
-    }
-    
-    /* المحتوى */
-    div, section, article, .box {
-        width: 100% !important;
-        margin: 10px 0 !important;
-        padding: 10px !important;
-        float: none !important;
-    }
-    
-    /* المعلومات */
-    .General, .information, .info {
+    h1, h2, h3, h4 {
         text-align: center !important;
     }
 }
@@ -495,6 +478,7 @@
 
     </body>
 </html>   
+
 
 
 
