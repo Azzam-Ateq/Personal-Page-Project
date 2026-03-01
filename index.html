@@ -274,26 +274,46 @@
         }
 
 @media (max-width: 768px) {
-    body {
+    /* كل العناصر تصير بعرض كامل */
+    body * {
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    
+    /* القوائم تصير عمودية */
+    ul, ol, .nav, .menu, header {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
         text-align: center !important;
-    }
-    
-    div, section, article {
-        width: 100% !important;
-        margin: 10px 0 !important;
-        padding: 5px !important;
-    }
-    
-    ul, ol, menu {
         padding: 0 !important;
     }
     
-    li {
-        display: block !important;
-        margin: 5px 0 !important;
+    li, .nav li {
+        list-style: none !important;
+        margin: 8px 0 !important;
+        width: 100% !important;
+    }
+    
+    /* العناوين */
+    h1, h2, h3, h4, h5, h6 {
+        text-align: center !important;
+        width: 100% !important;
+    }
+    
+    /* المحتوى */
+    div, section, article, .box {
+        width: 100% !important;
+        margin: 10px 0 !important;
+        padding: 10px !important;
+        float: none !important;
+    }
+    
+    /* المعلومات */
+    .General, .information, .info {
+        text-align: center !important;
     }
 }
-
 
 
 
@@ -475,6 +495,7 @@
 
     </body>
 </html>   
+
 
 
 
